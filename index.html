@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Ramsey FE Wk4 Coding Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<style>
+    body {
+        background-color: #05386b;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    h1 {
+        color:#379683;
+    }
+    .card {
+        background-color:#5cdb95;
+        color: #05386b;
+    }
+    .btn {
+        background-color: #05386b;
+        color:#379683;
+    }
+</style>
+<body class="container" background:#05386b>
+    <br>
+    <h1>Aquarium Maintenance Log</h1>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="maint-date">Date</label>
+                        <input type="date" class="form-control" id="maint-date">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="nitrate">NO3</label>
+                        <input type="text" class="form-control" id="nitrate">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="nitrite">NO2</label>
+                        <input type="text" class="form-control" id="nitrite">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="ammonia">NH3</label>
+                        <input type="text" class="form-control" id="ammonia">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="pH">pH</label>
+                        <input type="text" class="form-control" id="pH">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <input type="text" class="form-control" id="notes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" id="add" class="btn">Add Entry</button>
+        </div>
+    </div>
+    <br><br>
+    <table id="maint" class="table table-light table-striped">
+        <tr>
+            <th>Date</th>
+            <th>NO3</th>
+            <th>NO2</th>
+            <th>NH3</th>
+            <th>pH</th>
+            <th>Notes</th>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
